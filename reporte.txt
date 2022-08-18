@@ -1,0 +1,59 @@
+Validation Report
+Conforms: False
+Results (7):
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("0", datatype=xsd:integer) ; sh:message Literal("No debe haber requerimientos conflictivos", lang=es) ; sh:path ro:isInConflictWith ]
+	Focus Node: mia:requirement4
+	Result Path: ro:isInConflictWith
+	Message: No debe haber requerimientos conflictivos
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
+	Focus Node: mia:requirement7
+	Result Path: ro:isMandatory
+	Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
+	Focus Node: mia:requirement10
+	Result Path: ro:isMandatory
+	Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
+	Focus Node: mia:requirement14
+	Result Path: ro:isMandatory
+	Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
+	Focus Node: mia:requirement9
+	Result Path: ro:isMandatory
+	Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
+	Focus Node: mia:requirement5
+	Result Path: ro:isMandatory
+	Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: ex:RequirementShape
+	Focus Node: mia:requirement16
+	Value Node: mia:requirement16
+	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("si un requerimiento está bloqueado por otro ese requerimiento no puede estar cerrado si su bloqueante no lo está") ; sh:select Literal(" select $this
+            where {
+                    $this a <http://ns.softwiki.de/req/2/Requirement> . 
+                    $this <http://ns.softwiki.de/req/2/status> ?literal1 .
+                    filter(?literal1 in ('closed','cerrado', 'resuelto')) .
+                    $this <http://ns.softwiki.de/req/2/requires> ?otroReq .
+                    ?otroReq a <http://ns.softwiki.de/req/2/Requirement> .
+                    ?otroReq <http://ns.softwiki.de/req/2/status> ?literal .
+                    filter(?literal in ('abierto','in progress', 'open')) .
+            }
+        ") ]
+	Message: si un requerimiento está bloqueado por otro ese requerimiento no puede estar cerrado si su bloqueante no lo está
+Validation Report
+Conforms: True
+-------------

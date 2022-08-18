@@ -1,0 +1,888 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/prueba_merge#"
+     xml:base="http://www.semanticweb.org/prueba_merge"
+     xmlns:mia="http://www.semanticweb.org/prueba_merge#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swore="http://ns.softwiki.de/req/2/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontoreq="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/prueba_merge"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/licence -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/conflicts -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/conflicts">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isInConflictWith"/>
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="en">conficts</rdfs:label>
+        <rdfs:label xml:lang="de">steht im Konflikt zu</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/contains -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/contains">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isPartOf"/>
+        <rdfs:label xml:lang="de">beinhaltet</rdfs:label>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/contributor -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/contributor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Stakeholder"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <rdfs:label xml:lang="de">trägt bei</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/creator -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/creator">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/contributor"/>
+        <rdfs:comment>Indicates the req:Stakeholder that creates the resource of a req:Requirements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:label xml:lang="de">hat erstellt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/dependsOn">
+        <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/entails"/>
+        <rdfs:label xml:lang="en">depends on</rdfs:label>
+        <rdfs:label xml:lang="de">hängt ab von</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/details -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/details">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isDetailedBy"/>
+        <rdfs:label xml:lang="de">detailliert</rdfs:label>
+        <rdfs:label xml:lang="en">details</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/entails -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/entails">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdfs:label xml:lang="en">entails</rdfs:label>
+        <rdfs:label xml:lang="de">hat zur Folge</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/hasProject -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/hasProject">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Project"/>
+        <rdfs:label xml:lang="de">gehört zu Projekt</rdfs:label>
+        <rdfs:label xml:lang="en">hasProject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/invalidates -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/invalidates">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isInvalidFor"/>
+        <rdfs:label xml:lang="de">erklärt ungültig</rdfs:label>
+        <rdfs:label xml:lang="en">invalidates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/isDetailedBy -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/isDetailedBy">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:label xml:lang="en">detailed by</rdfs:label>
+        <rdfs:label xml:lang="de">detailliert durch</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/isInvalidFor -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/isInvalidFor">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdfs:label xml:lang="en">invalid for</rdfs:label>
+        <rdfs:label xml:lang="de">ungültig für</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+        <rdfs:label xml:lang="de">ist Teil von</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/isRedundantTo -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/isRedundantTo">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="en">redundant to</rdfs:label>
+        <rdfs:label xml:lang="de">redundant zu</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/isSimilarTo -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/isSimilarTo">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label xml:lang="en">similar to</rdfs:label>
+        <rdfs:label xml:lang="de">ähnlich wie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/lastContributor -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/lastContributor">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/contributor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:comment>Indicates the req:Stakeholder that made the latest contribution on a req:Requirements.</rdfs:comment>
+        <rdfs:label xml:lang="en">Last Contributor</rdfs:label>
+        <rdfs:label xml:lang="de">hat zuletzt beigetragen</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/relation -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/relation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
+        <rdfs:label xml:lang="de">steht in Beziehung zu</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/requires -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/requires">
+        <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+        <rdfs:label xml:lang="de">benötigt</rdfs:label>
+        <rdfs:label xml:lang="en">requires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/source -->
+
+    <owl:ObjectProperty rdf:about="http://ns.softwiki.de/req/2/source">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Source"/>
+        <rdfs:label xml:lang="en">has source</rdfs:label>
+        <rdfs:label xml:lang="de">hat Quelle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#excludes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#excludes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementReason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementReason">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementTarget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isCoexistentWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isCoexistentWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isInConflictWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isInConflictWith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isNegativeContributionToGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isNegativeContributionToGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isPositiveContributionToGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isPositiveContributionToGoal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/priority -->
+
+    <owl:DatatypeProperty rdf:about="http://ns.softwiki.de/req/2/priority">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:comment>Describes the priority of a req:Requirement.</rdfs:comment>
+        <rdfs:label xml:lang="de">hat Priorität</rdfs:label>
+        <rdfs:label xml:lang="en">priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/quality -->
+
+    <owl:DatatypeProperty rdf:about="http://ns.softwiki.de/req/2/quality">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:comment>Describes the quality of a req:Requirement.</rdfs:comment>
+        <rdfs:label xml:lang="de">hat Qualität</rdfs:label>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/status -->
+
+    <owl:DatatypeProperty rdf:about="http://ns.softwiki.de/req/2/status">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:comment>Defines the state of a req:Requirement.</rdfs:comment>
+        <rdfs:label xml:lang="de">hat Status</rdfs:label>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isOptional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isOptional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prueba_merge#cost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prueba_merge#cost">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/prueba_merge#risk -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/prueba_merge#risk">
+        <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/Document -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/Document">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:subClassOf rdf:resource="http://ns.softwiki.de/req/2/Source"/>
+        <rdfs:comment>This class represents Documents that are source of a Requirement. Such documents may be standards, a law, manuals, screenshots etc.. req:Document is aligned to foaf:Document.</rdfs:comment>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <rdfs:label xml:lang="de">Dokument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/Enrichment -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/Enrichment">
+        <owl:equivalentClass rdf:resource="http://rdfs.org/sioc/ns#Item"/>
+        <rdfs:comment>Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging.</rdfs:comment>
+        <rdfs:label xml:lang="de">Anreicherung</rdfs:label>
+        <rdfs:label xml:lang="en">Enrichment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/ExistingSystem -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/ExistingSystem">
+        <rdfs:subClassOf rdf:resource="http://ns.softwiki.de/req/2/Source"/>
+        <rdfs:comment>This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application.</rdfs:comment>
+        <rdfs:label xml:lang="de">Bestehendes System</rdfs:label>
+        <rdfs:label xml:lang="en">Existing System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/Project -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/Project">
+        <owl:equivalentClass rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+        <rdfs:comment>The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects.</rdfs:comment>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+        <rdfs:label xml:lang="de">Projekt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/Requirement -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/Requirement">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+        <rdfs:comment>The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm).</rdfs:comment>
+        <rdfs:label xml:lang="de">Anforderung</rdfs:label>
+        <rdfs:label xml:lang="en">Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/Source -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/Source">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+        <rdfs:comment>The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document.</rdfs:comment>
+        <rdfs:label xml:lang="de">Anforderungsquelle</rdfs:label>
+        <rdfs:label xml:lang="en">Source of the Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ns.softwiki.de/req/2/Stakeholder -->
+
+    <owl:Class rdf:about="http://ns.softwiki.de/req/2/Stakeholder">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:subClassOf rdf:resource="http://ns.softwiki.de/req/2/Source"/>
+        <rdfs:comment>This class represents involved Stakeholders. Usually it will be not directly used as it is aligned to foaf:Agent and its subclasses foaf:Person, foaf:Group etc..</rdfs:comment>
+        <rdfs:label xml:lang="de">Stakeholder</rdfs:label>
+        <rdfs:label xml:lang="en">Stakeholder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#Item -->
+
+    <owl:Class rdf:about="http://rdfs.org/sioc/ns#Item"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#Project -->
+
+    <owl:Class rdf:about="http://usefulinc.com/ns/doap#Project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
