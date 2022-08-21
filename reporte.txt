@@ -4,25 +4,19 @@ Results (7):
 Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
 	Severity: sh:Violation
 	Source Shape: [ sh:maxCount Literal("0", datatype=xsd:integer) ; sh:message Literal("No debe haber requerimientos conflictivos", lang=es) ; sh:path ro:isInConflictWith ]
-	Focus Node: ex:requirement0
+	Focus Node: ex:requirement4
 	Result Path: ro:isInConflictWith
 	Message: No debe haber requerimientos conflictivos
 Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
 	Severity: sh:Violation
 	Source Shape: [ sh:maxCount Literal("0", datatype=xsd:integer) ; sh:message Literal("No debe haber requerimientos conflictivos", lang=es) ; sh:path ro:isInConflictWith ]
-	Focus Node: ex:requirement4
+	Focus Node: ex:requirement0
 	Result Path: ro:isInConflictWith
 	Message: No debe haber requerimientos conflictivos
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
 	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement5
-	Result Path: ro:isMandatory
-	Message: Para cada requerimiento, se debe definir si es obligatorio o no
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement7
+	Focus Node: ex:requirement14
 	Result Path: ro:isMandatory
 	Message: Para cada requerimiento, se debe definir si es obligatorio o no
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
@@ -34,13 +28,19 @@ Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
 	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement14
+	Focus Node: ex:requirement7
 	Result Path: ro:isMandatory
 	Message: Para cada requerimiento, se debe definir si es obligatorio o no
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
 	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
 	Focus Node: ex:requirement10
+	Result Path: ro:isMandatory
+	Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
+	Focus Node: ex:requirement5
 	Result Path: ro:isMandatory
 	Message: Para cada requerimiento, se debe definir si es obligatorio o no
 Validation Report
