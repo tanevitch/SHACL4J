@@ -7,12 +7,12 @@ CLEANER= Cleaner()
 
 ONTOREQ = Namespace("http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#")
 SWORE= Namespace("http://ns.softwiki.de/req/2/")
-MIA = Namespace("http://www.semanticweb.org/prueba_merge#")
+EX = Namespace("http://www.semanticweb.org/prueba_merge#")
 
 G = Graph()
 G.bind("swore", SWORE)
 G.bind("ontoreq", ONTOREQ)
-G.bind("mia", MIA)
+G.bind("ex", EX)
 G.parse("ontology/onto_prueba.owl")
 
 def count_individuals_of(uri):
@@ -21,7 +21,7 @@ def count_individuals_of(uri):
 def load_individual(uri: URIRef, class_type: str, literal: str) -> URIRef:
     for s, p, o in G.triples((None, RDFS.label, Literal(literal))):
         return s
-    individual= MIA[class_type+str(count_individuals_of(uri))]
+    individual= EX[class_type+str(count_individuals_of(uri))]
     G.add((individual, RDF.type, uri))
     G.add((individual, RDFS.label, Literal(literal)))
     return individual
@@ -35,8 +35,8 @@ def load_requirement(requirement: object, clave: str):
     individual= load_individual(uriRequirement, "requirement", requirement[clave])
     G.add((individual, URIRef(SWORE["priority"]), Literal(requirement["Priority"])))
     G.add((individual, URIRef(SWORE["status"]), Literal(requirement["Status"])))
-    G.add((individual, URIRef(MIA["risk"]), Literal(requirement["Risk Probability"])))
-    G.add((individual, URIRef(MIA["cost"]), Literal(requirement["Story Points"])))
+    G.add((individual, URIRef(EX["risk"]), Literal(requirement["Risk Probability"])))
+    G.add((individual, URIRef(EX["cost"]), Literal(requirement["Story Points"])))
     if (requirement["Obligatorio"]):
         G.add((individual, URIRef(ONTOREQ["isMandatory"]), Literal(requirement["Obligatorio"], datatype=XSD.boolean)))
 
@@ -162,29 +162,30 @@ def link_blocking_requirements():
                 if (clave_de_otro_req == clave_a_buscar):
                     load_requires(req, otro_req)
 
-with open("data/stories.json", "r", encoding='utf-8') as file:
-    requirements= json.load(file)
-requirements= CLEANER.clean_requirements(requirements)
+def populate_graph():
+    with open("data/stories.json", "r", encoding='utf-8') as file:
+        requirements= json.load(file)
+    requirements= CLEANER.clean_requirements(requirements)
 
-for requirement in requirements:
-    requ= load_requirement(requirement, "Quiero")
-    goal = load_goal(requirement["Con el fin de"])
-    project = load_project(requirement["Project"])
-    stakeholder= load_stakeholder(requirement["Como"])
-    dev= load_developer(requirement["Assignee"])
-    story= load_story(requirement)
-    obstacle= load_obstacle(requirement["Criterios de aceptación"])
-    load_hasProject(requ, project)
-    load_hasGoal(requ, goal)
-    load_developedBy(requ, dev)
-    load_hasSource(requ, stakeholder)
-    load_describesRequirement(requ, story)
-    load_hasObstacle(requ, obstacle)
-    
+    for requirement in requirements:
+        requ= load_requirement(requirement, "Quiero")
+        goal = load_goal(requirement["Con el fin de"])
+        project = load_project(requirement["Project"])
+        stakeholder= load_stakeholder(requirement["Como"])
+        dev= load_developer(requirement["Assignee"])
+        story= load_story(requirement)
+        obstacle= load_obstacle(requirement["Criterios de aceptación"])
+        load_hasProject(requ, project)
+        load_hasGoal(requ, goal)
+        load_developedBy(requ, dev)
+        load_hasSource(requ, stakeholder)
+        load_describesRequirement(requ, story)
+        load_hasObstacle(requ, obstacle)
+        
 
-link_related_requirements()
-link_duplicated_requirements()
-link_conflicting_requirements()
-link_blocking_requirements()
-G.serialize("ontology/output.xml", format="xml", encoding="utf-8")
+    link_related_requirements()
+    link_duplicated_requirements()
+    link_conflicting_requirements()
+    link_blocking_requirements()
+    G.serialize("ontology/output.xml", format="xml", encoding="utf-8")
 

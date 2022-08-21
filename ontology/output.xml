@@ -1,64 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:mia="http://www.semanticweb.org/prueba_merge#"
+   xmlns:ex="http://www.semanticweb.org/prueba_merge#"
    xmlns:ontoreq="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:swore="http://ns.softwiki.de/req/2/"
+   xmlns:terms="http://purl.org/dc/terms/"
 >
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement12">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement2">
     <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>gestionar las peticiones que realizan los operarios</rdfs:label>
-    <swore:priority>minor</swore:priority>
+    <rdfs:label>aprobar un trámite</rdfs:label>
+    <swore:priority>blocker</swore:priority>
     <swore:status>closed</swore:status>
-    <mia:risk>high</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
+    <ex:risk>high</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
     <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
     <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal13"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer2"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal2"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder3"/>
     <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <swore:isRedundantTo rdf:resource="http://www.semanticweb.org/prueba_merge#requirement6"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement16">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>consultar el estado de mi trámite</rdfs:label>
-    <swore:priority>minor</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal17"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <swore:requires rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b5</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b5", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1622802840000, "Updated": 1622802960000, "Resolved": 1622802960000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "evitar asignar un tr\u00e1mite que no corresponde", "Quiero": "denegar un tr\u00e1mite", "Como": "operador del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 3, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement3"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b8</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b8", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "pedro rodriguez", "Reporter": "carlos gimenez", "Created": 1593000840000, "Updated": 1593434820000, "Resolved": 1593434820000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": "b4", "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "que se asigne a la entidad que lo atender\u00e1", "Quiero": "confirmar un tr\u00e1mite", "Como": "operario del portal", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement6"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/relation">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label xml:lang="en">is related to</rdfs:label>
-    <rdfs:label xml:lang="de">steht in Beziehung zu</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <owl:propertyChainAxiom rdf:nodeID="N5669c49f764c46d09f9b6bb7ba9e1fdb"/>
+    <owl:propertyChainAxiom rdf:nodeID="N20e95826312648c4bf96c57db557b6e1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Source">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
-    <rdfs:comment>The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document.</rdfs:comment>
-    <rdfs:label xml:lang="de">Anforderungsquelle</rdfs:label>
-    <rdfs:label xml:lang="en">Source of the Requirement</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase"/>
-    <owl:propertyChainAxiom rdf:nodeID="N411825e151f745009daf15b44c451733"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.softwiki.de/req/2/quality">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -67,95 +54,52 @@
     <rdfs:label xml:lang="de">hat Qualität</rdfs:label>
     <rdfs:label xml:lang="en">quality</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal8">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>aportar información a un trámite creado</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer1">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-    <rdfs:label>maria lopez</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/ExistingSystem">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://ns.softwiki.de/req/2/Source"/>
-    <rdfs:comment>This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application.</rdfs:comment>
-    <rdfs:label xml:lang="de">Bestehendes System</rdfs:label>
-    <rdfs:label xml:lang="en">Existing System</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nfcd022a1bc3f49a4a88b8d5242dfcb73">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
-    <rdf:rest rdf:nodeID="N741a10668a384e8c974835fa16e37fb8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement4">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>ocultar un trámite</rdfs:label>
-    <swore:priority>minor</swore:priority>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>medium</mia:risk>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mia:cost>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal4"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal7"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer1"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <ontoreq:isInConflictWith rdf:resource="http://www.semanticweb.org/prueba_merge#requirement4"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement5">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>finalizar un trámite</rdfs:label>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>high</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal5"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/contains">
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/conflicts">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isInConflictWith"/>
     <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isPartOf"/>
-    <rdfs:label xml:lang="de">beinhaltet</rdfs:label>
-    <rdfs:label xml:lang="en">contains</rdfs:label>
+    <rdfs:label xml:lang="en">conficts</rdfs:label>
+    <rdfs:label xml:lang="de">steht im Konflikt zu</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isInvalidFor">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase"/>
+    <owl:propertyChainAxiom rdf:nodeID="Nfce81edca62841808f6a73b5a2b8ff46"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b6</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b6", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "maria lopez", "Reporter": "lucrecia perez", "Created": 1593602460000, "Updated": 1593785220000, "Resolved": 1593785220000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": "b9", "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "evitar cualquier operaci\u00f3n sobre \u00e9l", "Quiero": "ocultar un tr\u00e1mite", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 4, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story11">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b13</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b13", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "carlos gimenez", "Created": 1591187280000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 0.0, "Con el fin de": "saber que mi tr\u00e1mite est\u00e1 siendo atendido", "Quiero": "recibir una notificaci\u00f3n por correo electr\u00f3nico o mensaje de texto cuando se cambie el estado de mi solicitud a \"en progreso\"", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 1, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isSimilarTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="en">invalid for</rdfs:label>
-    <rdfs:label xml:lang="de">ungültig für</rdfs:label>
+    <rdfs:label xml:lang="en">similar to</rdfs:label>
+    <rdfs:label xml:lang="de">ähnlich wie</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement9">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>obtener un gráfico estadístico sobre el estado de trámites</rdfs:label>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>medium</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</mia:cost>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal10"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer1"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://rdfs.org/sioc/ns#Item">
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Project">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://usefulinc.com/ns/doap#Project"/>
+    <rdfs:comment>The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects.</rdfs:comment>
+    <rdfs:label xml:lang="en">Project</rdfs:label>
+    <rdfs:label xml:lang="de">Projekt</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement1">
     <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
     <rdfs:label>listar mis trámites</rdfs:label>
     <swore:priority>blocker</swore:priority>
     <swore:status>open</swore:status>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
     <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
     <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
     <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal1"/>
@@ -165,98 +109,166 @@
     <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
     <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement5"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1fc86eca51224ed9b188a1f3a907aef6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Source"/>
+    <rdfs:label xml:lang="en">has source</rdfs:label>
+    <rdfs:label xml:lang="de">hat Quelle</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#cost">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#risk">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/lastContributor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/contributor"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-    <rdfs:comment>Indicates the req:Stakeholder that made the latest contribution on a req:Requirements.</rdfs:comment>
-    <rdfs:label xml:lang="en">Last Contributor</rdfs:label>
-    <rdfs:label xml:lang="de">hat zuletzt beigetragen</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement2">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement13">
     <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>aprobar un trámite</rdfs:label>
-    <swore:priority>blocker</swore:priority>
+    <rdfs:label>dar de baja una entidad</rdfs:label>
+    <swore:priority>major</swore:priority>
     <swore:status>closed</swore:status>
-    <mia:risk>high</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
+    <ex:risk>high</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
     <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
     <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal2"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal14"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement3">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>denegar un trámite</rdfs:label>
+    <swore:priority>major</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>medium</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal3"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder3"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement7">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>cargar un archivo</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>high</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ex:cost>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal8"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer2"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/relation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label xml:lang="en">is related to</rdfs:label>
+    <rdfs:label xml:lang="de">steht in Beziehung zu</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement9">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>obtener un gráfico estadístico sobre el estado de trámites</rdfs:label>
+    <swore:priority>major</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>medium</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ex:cost>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal10"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer1"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story12">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b14</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b14", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "lucrecia perez", "Created": 1591187280000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "que se resuelva con prioridad", "Quiero": "modificar la urgencia de un tr\u00e1mite", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    <rdfs:subClassOf rdf:nodeID="N581dc39199a94b1da97ebb00065a65df"/>
+    <rdfs:subClassOf rdf:nodeID="N7eb921e524d944869f978dd4c06a8501"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/dependsOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/entails"/>
+    <rdfs:label xml:lang="en">depends on</rdfs:label>
+    <rdfs:label xml:lang="de">hängt ab von</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement8">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>cargar una plantilla de trámites</rdfs:label>
+    <swore:priority>major</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>medium</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal9"/>
     <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
     <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder3"/>
     <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <swore:isRedundantTo rdf:resource="http://www.semanticweb.org/prueba_merge#requirement6"/>
+    <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story4">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b6</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b6", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "maria lopez", "Reporter": "lucrecia perez", "Created": 1593602460000, "Updated": 1593785220000, "Resolved": 1593785220000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": "b9", "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "evitar cualquier operaci\u00f3n sobre \u00e9l", "Quiero": "ocultar un tr\u00e1mite", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 4, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement4"/>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isDetailedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label xml:lang="en">detailed by</rdfs:label>
+    <rdfs:label xml:lang="de">detailliert durch</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Enrichment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:resource="http://rdfs.org/sioc/ns#Item"/>
-    <rdfs:comment>Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging.</rdfs:comment>
-    <rdfs:label xml:lang="de">Anreicherung</rdfs:label>
-    <rdfs:label xml:lang="en">Enrichment</rdfs:label>
+  <rdf:Description rdf:nodeID="Nfce81edca62841808f6a73b5a2b8ff46">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
+    <rdf:rest rdf:nodeID="Nd76a8872922f41dd9375b891ff3f2324"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/entails">
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isInvalidFor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="en">entails</rdfs:label>
-    <rdfs:label xml:lang="de">hat zur Folge</rdfs:label>
+    <rdfs:label xml:lang="en">invalid for</rdfs:label>
+    <rdfs:label xml:lang="de">ungültig für</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal2">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>que pueda ser asignado a la entidad correspondiente</rdfs:label>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/invalidates">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isInvalidFor"/>
+    <rdfs:label xml:lang="de">erklärt ungültig</rdfs:label>
+    <rdfs:label xml:lang="en">invalidates</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement10">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>recibir una notificación por correo electrónico o mensaje de texto cuando se cambie el estado de mi solicitud a "en progreso"</rdfs:label>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</mia:cost>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal11"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5d9192697ee442a790e7646356e1fc12">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Requirement">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-    <rdfs:comment>The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm).</rdfs:comment>
-    <rdfs:label xml:lang="de">Anforderung</rdfs:label>
-    <rdfs:label xml:lang="en">Requirement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal0">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#stakeholder3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+    <rdfs:label>operador del portal de trámites</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal6">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>realizar una petición</rdfs:label>
+    <rdfs:label>que se asigne a la entidad que lo atenderá</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement15">
     <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
     <rdfs:label>dar de alta una entidad</rdfs:label>
     <swore:priority>major</swore:priority>
     <swore:status>closed</swore:status>
-    <mia:risk>medium</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
+    <ex:risk>medium</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
     <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
     <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
     <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal16"/>
@@ -267,128 +279,16 @@
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story0">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
     <rdfs:label>b2</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b2", "Summary": null, "Issue Type": "story", "Status": "in progress", "Priority": "blocker", "Risk Probability": "low", "Resolution": "unresolved", "Assignee": "maria lopez", "Reporter": "carlos gimenez", "Created": 1623061320000, "Updated": 1623061380000, "Resolved": null, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b3, b10, b11", "Duplicates": null, "Conflicting": null, "Blocking": "b19", "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "realizar una petici\u00f3n", "Quiero": "crear un tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
+    <terms:description>{"Project": "portal pba", "Key": "b2", "Summary": null, "Issue Type": "story", "Status": "in progress", "Priority": "blocker", "Risk Probability": "low", "Resolution": "unresolved", "Assignee": "maria lopez", "Reporter": "carlos gimenez", "Created": 1623061320000, "Updated": 1623061380000, "Resolved": null, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b3, b10, b11", "Duplicates": null, "Conflicting": "b19", "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "realizar una petici\u00f3n", "Quiero": "crear un tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
     <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement6">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>confirmar un trámite</rdfs:label>
-    <swore:priority>minor</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal6"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer2"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder6"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <swore:isRedundantTo rdf:resource="http://www.semanticweb.org/prueba_merge#requirement2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isNegativeContributionToGoal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement11">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>modificar la urgencia de un trámite</rdfs:label>
-    <swore:priority>minor</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>medium</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal12"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isDetailedBy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label xml:lang="en">detailed by</rdfs:label>
-    <rdfs:label xml:lang="de">detailliert durch</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal14">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>prohibir que gestione trámites</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/invalidates">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isInvalidFor"/>
-    <rdfs:label xml:lang="de">erklärt ungültig</rdfs:label>
-    <rdfs:label xml:lang="en">invalidates</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N379a02863dac43eba83388cd8a5ef737">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement13">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>dar de baja una entidad</rdfs:label>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>high</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal14"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story9">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b11</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b11", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "carlos gimenez", "Created": 1591187340000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "evitar que se realice manualmente", "Quiero": "cargar una plantilla de tr\u00e1mites", "Como": "operador del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 4, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement8"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Neeec6a80d3804fb282d8240dab213a3d">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement8">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>cargar una plantilla de trámites</rdfs:label>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>medium</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal9"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder3"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal12">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>que se resuelva con prioridad</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isPartOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="en">is part of</rdfs:label>
-    <rdfs:label xml:lang="de">ist Teil von</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement0">
     <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
     <rdfs:label>crear un trámite</rdfs:label>
     <swore:priority>blocker</swore:priority>
     <swore:status>in progress</swore:status>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
     <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
     <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
     <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal0"/>
@@ -398,6 +298,160 @@
     <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement1"/>
     <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement7"/>
     <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement8"/>
+    <ontoreq:isInConflictWith rdf:resource="http://www.semanticweb.org/prueba_merge#requirement16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementTarget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naf3fb3d0a67843fbbea0649c1bc17383">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/hasProject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Project"/>
+    <rdfs:label xml:lang="de">gehört zu Projekt</rdfs:label>
+    <rdfs:label xml:lang="en">hasProject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/details">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isDetailedBy"/>
+    <rdfs:label xml:lang="de">detailliert</rdfs:label>
+    <rdfs:label xml:lang="en">details</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement4">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>ocultar un trámite</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:priority>major</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>medium</ex:risk>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ex:cost>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal4"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal7"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer1"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:isInConflictWith rdf:resource="http://www.semanticweb.org/prueba_merge#requirement4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b7</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b7", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1593534540000, "Updated": 1593785580000, "Resolved": 1593785580000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 0.0, "Con el fin de": "declarar que se resolvi\u00f3 mi petici\u00f3n", "Quiero": "finalizar un tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+    <rdfs:label>pedro rodriguez</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement5">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>finalizar un trámite</rdfs:label>
+    <swore:priority>major</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>high</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal5"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement11">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>modificar la urgencia de un trámite</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>medium</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal12"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer4"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N581dc39199a94b1da97ebb00065a65df">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e5df5c6ab924273816fad6e074ba05c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal14">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>prohibir que gestione trámites</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement10">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>recibir una notificación por correo electrónico o mensaje de texto cuando se cambie el estado de mi solicitud a "en progreso"</rdfs:label>
+    <swore:priority>major</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ex:cost>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal11"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Enrichment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://rdfs.org/sioc/ns#Item"/>
+    <rdfs:comment>Enrichments are any concepts that added value to an Requirement. This class is aligned to sioc:Item so mainly enrichments are sioc:Poll or sioc:Comment on a Requirement. n additional alignment is defined to MUTO vocabulary to support personal tagging.</rdfs:comment>
+    <rdfs:label xml:lang="de">Anreicherung</rdfs:label>
+    <rdfs:label xml:lang="en">Enrichment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/ExistingSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ns.softwiki.de/req/2/Source"/>
+    <rdfs:comment>This class represents references to existing systems, if they are sources for requirements. The URI of instances of this class can be the URL of an existing Web-Application.</rdfs:comment>
+    <rdfs:label xml:lang="de">Bestehendes System</rdfs:label>
+    <rdfs:label xml:lang="en">Existing System</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N751ed8c6728e4474960b62570161d49a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N946fda2966a54483ab825e085388b41b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+    <rdfs:comment>The class req:Source represents the req:source of a requirement. There are two major subclasses of req:Source : req:Stakeholder and req:Document.</rdfs:comment>
+    <rdfs:label xml:lang="de">Anforderungsquelle</rdfs:label>
+    <rdfs:label xml:lang="en">Source of the Requirement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>que pueda ser asignado a la entidad correspondiente</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementReason">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Document">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -407,55 +461,409 @@
     <rdfs:label xml:lang="en">Document</rdfs:label>
     <rdfs:label xml:lang="de">Dokument</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>evitar que se realice manualmente</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/requires">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <rdfs:label xml:lang="de">benötigt</rdfs:label>
+    <rdfs:label xml:lang="en">requires</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#obstacle0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
+    <rdfs:label>None</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Requirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    <rdfs:comment>The concept of this class is a Requirement that is related to nearly any kind of project. Between instances of the class req:Requirement relations can be defined using the sub-properties of req:relation (e.g. req:contains, req:invalidates, req:dependsOn, etc.). Requirements are derived from Sources (req:Source) or its subclasses req:Document and req:Stakeholder. Stakholders can contribute (req:contributor) information to the Requirement and enchrich (req:enrichedBy) it by commenting, voting or personal tagging. Requirements are referenced by a domain specific topic (skos:Concept), using Tags (tags:Tag) or as usual in the requirements engineering domain by using Glossary Terms (req:GlossaryTerm).</rdfs:comment>
+    <rdfs:label xml:lang="de">Anforderung</rdfs:label>
+    <rdfs:label xml:lang="en">Requirement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2c2826a593494857aa61a259d4fbbc3d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement14">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>poder consultar una sección de ayuda a la hora de cargar un trámite</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal15"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal11">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
     <rdfs:label>saber que mi trámite está siendo atendido</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncf384b804c944bcab903bbec827e3d40">
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/priority">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:comment>Describes the priority of a req:Requirement.</rdfs:comment>
+    <rdfs:label xml:lang="de">hat Priorität</rdfs:label>
+    <rdfs:label xml:lang="en">priority</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement6">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>confirmar un trámite</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal6"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer2"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder6"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <swore:isRedundantTo rdf:resource="http://www.semanticweb.org/prueba_merge#requirement2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N20e95826312648c4bf96c57db557b6e1">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
+    <rdf:rest rdf:nodeID="N7720899e46ca474e8ed884c11c5f02ba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#stakeholder6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+    <rdfs:label>operario del portal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb8ea59eaa1f4bddbd7ccb08fe56b603">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    <rdfs:subClassOf rdf:nodeID="Nb966a324379a45e3892a2e249d6d2b27"/>
+    <rdfs:subClassOf rdf:nodeID="N2c2826a593494857aa61a259d4fbbc3d"/>
+    <rdfs:subClassOf rdf:nodeID="N29fa6cf2b264497ba6433914f5411727"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9526407c7a844c55a56b1a5c0ad8305d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#project0">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Project"/>
+    <rdfs:label>portal pba</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/entails">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <rdfs:label xml:lang="en">entails</rdfs:label>
+    <rdfs:label xml:lang="de">hat zur Folge</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement12">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>gestionar las peticiones que realizan los operarios</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>high</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal13"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer2"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N946fda2966a54483ab825e085388b41b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b9</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b9", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1592493000000, "Updated": 1593434760000, "Resolved": 1593434760000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": "b6", "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "permitir que algunos organismos operen sobre \u00e9l", "Quiero": "ocultar un tr\u00e1mite", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal15">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>saber cómo completar mi solicitud y los datos que debo proporcionar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement16">
+    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:label>consultar el estado de mi trámite</rdfs:label>
+    <swore:priority>minor</swore:priority>
+    <swore:status>closed</swore:status>
+    <ex:risk>low</ex:risk>
+    <ex:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ex:cost>
+    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
+    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
+    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal17"/>
+    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
+    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
+    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/status">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:comment>Defines the state of a req:Requirement.</rdfs:comment>
+    <rdfs:label xml:lang="de">hat Status</rdfs:label>
+    <rdfs:label xml:lang="en">status</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7eb921e524d944869f978dd4c06a8501">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase"/>
+    <owl:propertyChainAxiom rdf:nodeID="Nf37320c292454c24a93459cfddf179a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29fa6cf2b264497ba6433914f5411727">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
     <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story14">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story15">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b16</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b16", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "gaston ramirez", "Created": 1591186440000, "Updated": 1592841000000, "Resolved": 1592840940000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "prohibir que gestione tr\u00e1mites", "Quiero": "dar de baja una entidad", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement13"/>
+    <rdfs:label>b17</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b17", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1591184520000, "Updated": 1592840520000, "Resolved": 1592840520000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": null, "Con el fin de": "saber c\u00f3mo completar mi solicitud y los datos que debo proporcionar", "Quiero": "poder consultar una secci\u00f3n de ayuda a la hora de cargar un tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement14"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story12">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story1">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b14</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b14", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "lucrecia perez", "Created": 1591187280000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "que se resuelva con prioridad", "Quiero": "modificar la urgencia de un tr\u00e1mite", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement11"/>
+    <rdfs:label>b3</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b3", "Summary": null, "Issue Type": "story", "Status": "open", "Priority": "blocker", "Risk Probability": "low", "Resolution": "unresolved", "Assignee": "pedro rodriguez", "Reporter": "gaston ramirez", "Created": 1623061080000, "Updated": 1623061140000, "Resolved": null, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2, b7", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "ver los tr\u00e1mites que realic\u00e9", "Quiero": "listar mis tr\u00e1mites", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement1"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementReason">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason"/>
+  <rdf:Description rdf:nodeID="Naec31cd69d5f4fa4abe98f06c021e2d3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/source">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story17">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b19</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b19", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "carlos gimenez", "Created": 1590765240000, "Updated": 1591784160000, "Resolved": 1591784160000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "saber en qu\u00e9 estado se encuentra", "Quiero": "consultar el estado de mi tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#excludes">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Source"/>
-    <rdfs:label xml:lang="en">has source</rdfs:label>
-    <rdfs:label xml:lang="de">hat Quelle</rdfs:label>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/contributor"/>
+    <rdfs:comment>Indicates the req:Stakeholder that creates the resource of a req:Requirements.</rdfs:comment>
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+    <rdfs:label xml:lang="de">hat erstellt</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal0">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>realizar una petición</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb966a324379a45e3892a2e249d6d2b27">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b4</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b4", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "blocker", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "lucrecia perez", "Created": 1622815920000, "Updated": 1622815920000, "Resolved": 1623061380000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": "b8", "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "que pueda ser asignado a la entidad correspondiente", "Quiero": "aprobar un tr\u00e1mite", "Como": "operador del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5669c49f764c46d09f9b6bb7ba9e1fdb">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
+    <rdf:rest rdf:nodeID="N5b1b444f89e942588a117e5a4f086a98"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23ddcd93d0424bbda64fc2d81b7bd76c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b1b444f89e942588a117e5a4f086a98">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <rdfs:label xml:lang="en">is part of</rdfs:label>
+    <rdfs:label xml:lang="de">ist Teil von</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e096c1bdd0645c4a4221aaef35b1e05">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory"/>
+    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isRedundantTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <rdfs:label xml:lang="en">redundant to</rdfs:label>
+    <rdfs:label xml:lang="de">redundant zu</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    <rdfs:subClassOf rdf:nodeID="Naf3fb3d0a67843fbbea0649c1bc17383"/>
+    <rdfs:subClassOf rdf:nodeID="N4e5df5c6ab924273816fad6e074ba05c"/>
+    <rdfs:subClassOf rdf:nodeID="Ncb8ea59eaa1f4bddbd7ccb08fe56b603"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isOptional">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf4d00a547e8644d2bbf12d700a7ae18a">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="N725802311f7149bb812e3b52b636d4b4"/>
-    <rdfs:subClassOf rdf:nodeID="N3371147b7419422db5d63fe29c7c7233"/>
-    <rdfs:subClassOf rdf:nodeID="Nad5bc2b2e8fc4cac8079d6270ee8c109"/>
-    <rdfs:subClassOf rdf:nodeID="N6ce4a13bd1f24d2b94e8ad5ee4ffd01f"/>
-    <rdfs:subClassOf rdf:nodeID="N98c1aacaaeae45788172ae3e10adfb36"/>
-    <rdfs:subClassOf rdf:nodeID="N8215d80494cc4122827096a4ef469f54"/>
-    <rdfs:subClassOf rdf:nodeID="N5958e24c4f6b45fd8e8f972844a8724f"/>
+    <rdfs:subClassOf rdf:nodeID="Nf1981c4e7c0745bca8c76fced3e1f74d"/>
+    <rdfs:subClassOf rdf:nodeID="N2fba812e0ae64960a920d42ac8fa7fc6"/>
+    <rdfs:subClassOf rdf:nodeID="N9526407c7a844c55a56b1a5c0ad8305d"/>
+    <rdfs:subClassOf rdf:nodeID="Ndbb1f8a242a14441af6fc0505ccd3c73"/>
+    <rdfs:subClassOf rdf:nodeID="Naec31cd69d5f4fa4abe98f06c021e2d3"/>
+    <rdfs:subClassOf rdf:nodeID="N23ddcd93d0424bbda64fc2d81b7bd76c"/>
+    <rdfs:subClassOf rdf:nodeID="N1e096c1bdd0645c4a4221aaef35b1e05"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story6">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Stakeholder"/>
+    <rdfs:label xml:lang="en">Contributor</rdfs:label>
+    <rdfs:label xml:lang="de">trägt bei</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story9">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b8</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b8", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "pedro rodriguez", "Reporter": "carlos gimenez", "Created": 1593000840000, "Updated": 1593434820000, "Resolved": 1593434820000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": "b4", "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "que se asigne a la entidad que lo atender\u00e1", "Quiero": "confirmar un tr\u00e1mite", "Como": "operario del portal", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement6"/>
+    <rdfs:label>b11</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b11", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "carlos gimenez", "Created": 1591187340000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "evitar que se realice manualmente", "Quiero": "cargar una plantilla de tr\u00e1mites", "Como": "operador del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 4, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#cost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story14">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b16</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b16", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "gaston ramirez", "Created": 1591186440000, "Updated": 1592841000000, "Resolved": 1592840940000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "prohibir que gestione tr\u00e1mites", "Quiero": "dar de baja una entidad", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b10</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b10", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "pedro rodriguez", "Reporter": "lucrecia perez", "Created": 1591270500000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": null, "Con el fin de": "aportar informaci\u00f3n a un tr\u00e1mite creado", "Quiero": "cargar un archivo", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 3, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>declarar que se resolvió mi petición</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/contains">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
+    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isPartOf"/>
+    <rdfs:label xml:lang="de">beinhaltet</rdfs:label>
+    <rdfs:label xml:lang="en">contains</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story13">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b15</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b15", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "high", "Resolution": "duplicate", "Assignee": "pedro rodriguez", "Reporter": "lucrecia perez", "Created": 1591187220000, "Updated": 1593434640000, "Resolved": 1593434640000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "controlar los tr\u00e1mites que se aprueban", "Quiero": "gestionar las peticiones que realizan los operarios", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>evitar asignar un trámite que no corresponde</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+    <rdfs:label>juan perez</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2fba812e0ae64960a920d42ac8fa7fc6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>ver los trámites que realicé</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal16">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>permitir que gestione trámites</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
+    <rdfs:label>ana gomez</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf37320c292454c24a93459cfddf179a5">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
+    <rdf:rest rdf:nodeID="Nf4d00a547e8644d2bbf12d700a7ae18a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://usefulinc.com/ns/doap#Project">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isCoexistentWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Stakeholder">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -466,535 +874,140 @@
     <rdfs:label xml:lang="de">Stakeholder</rdfs:label>
     <rdfs:label xml:lang="en">Stakeholder</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase"/>
-    <owl:propertyChainAxiom rdf:nodeID="N586e4c5acdfa438eafbea9ffe8db3917"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#risk">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/relation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-    <rdfs:subClassOf rdf:nodeID="N1fc86eca51224ed9b188a1f3a907aef6"/>
-    <rdfs:subClassOf rdf:nodeID="N6f52c24801a1438ab4f22e0e1ddf0b9b"/>
-    <rdfs:subClassOf rdf:nodeID="N6d80ed2089274e1b87771c00edc14de7"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement7">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>cargar un archivo</rdfs:label>
-    <swore:priority>minor</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>high</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mia:cost>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal8"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer2"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-    <swore:relation rdf:resource="http://www.semanticweb.org/prueba_merge#requirement0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/contributor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Stakeholder"/>
-    <rdfs:label xml:lang="en">Contributor</rdfs:label>
-    <rdfs:label xml:lang="de">trägt bei</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement3">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>denegar un trámite</rdfs:label>
-    <swore:priority>major</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>medium</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</mia:cost>
-    <ontoreq:isMandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">1.0</ontoreq:isMandatory>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal3"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder3"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#requirement14">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:label>poder consultar una sección de ayuda a la hora de cargar un trámite</rdfs:label>
-    <swore:priority>minor</swore:priority>
-    <swore:status>closed</swore:status>
-    <mia:risk>low</mia:risk>
-    <mia:cost rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mia:cost>
-    <swore:hasProject rdf:resource="http://www.semanticweb.org/prueba_merge#project0"/>
-    <ontoreq:hasGoal rdf:resource="http://www.semanticweb.org/prueba_merge#goal15"/>
-    <swore:lastContributor rdf:resource="http://www.semanticweb.org/prueba_merge#developer5"/>
-    <swore:source rdf:resource="http://www.semanticweb.org/prueba_merge#stakeholder0"/>
-    <ontoreq:hasObstacle rdf:resource="http://www.semanticweb.org/prueba_merge#obstacle0"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <owl:propertyChainAxiom rdf:nodeID="N21af58af7e1b4ff4a537f394eecd5ab1"/>
-    <owl:propertyChainAxiom rdf:nodeID="Nfcd022a1bc3f49a4a88b8d5242dfcb73"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer2">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-    <rdfs:label>pedro rodriguez</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal6">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>que se asigne a la entidad que lo atenderá</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isSimilarTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="en">similar to</rdfs:label>
-    <rdfs:label xml:lang="de">ähnlich wie</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/conflicts">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isInConflictWith"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="en">conficts</rdfs:label>
-    <rdfs:label xml:lang="de">steht im Konflikt zu</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-    <rdfs:subClassOf rdf:nodeID="Nbc13725e24284968abeb4be1eead2c62"/>
-    <rdfs:subClassOf rdf:nodeID="N5d9192697ee442a790e7646356e1fc12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/isRedundantTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="en">redundant to</rdfs:label>
-    <rdfs:label xml:lang="de">redundant zu</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/requires">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <rdfs:label xml:lang="de">benötigt</rdfs:label>
-    <rdfs:label xml:lang="en">requires</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story17">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b19</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b19", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "carlos gimenez", "Created": 1590765240000, "Updated": 1591784160000, "Resolved": 1591784160000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "saber en qu\u00e9 estado se encuentra", "Quiero": "consultar el estado de mi tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement16"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/hasProject">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:range rdf:resource="http://ns.softwiki.de/req/2/Project"/>
-    <rdfs:label xml:lang="de">gehört zu Projekt</rdfs:label>
-    <rdfs:label xml:lang="en">hasProject</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story15">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b17</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b17", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1591184520000, "Updated": 1592840520000, "Resolved": 1592840520000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": null, "Con el fin de": "saber c\u00f3mo completar mi solicitud y los datos que debo proporcionar", "Quiero": "poder consultar una secci\u00f3n de ayuda a la hora de cargar un tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement14"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer5">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-    <rdfs:label>ana gomez</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story13">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b15</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b15", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "high", "Resolution": "duplicate", "Assignee": "pedro rodriguez", "Reporter": "lucrecia perez", "Created": 1591187220000, "Updated": 1593434640000, "Resolved": 1593434640000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "controlar los tr\u00e1mites que se aprueban", "Quiero": "gestionar las peticiones que realizan los operarios", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement12"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6ce4a13bd1f24d2b94e8ad5ee4ffd01f">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/contributor"/>
-    <rdfs:comment>Indicates the req:Stakeholder that creates the resource of a req:Requirements.</rdfs:comment>
-    <rdfs:label xml:lang="en">Creator</rdfs:label>
-    <rdfs:label xml:lang="de">hat erstellt</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#obstacle0">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
-    <rdfs:label>None</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story3">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b5</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b5", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1622802840000, "Updated": 1622802960000, "Resolved": 1622802960000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "evitar asignar un tr\u00e1mite que no corresponde", "Quiero": "denegar un tr\u00e1mite", "Como": "operador del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 3, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6f52c24801a1438ab4f22e0e1ddf0b9b">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N21af58af7e1b4ff4a537f394eecd5ab1">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
-    <rdf:rest rdf:nodeID="Nfc58b712e96a41e8bae29ab34f289d62"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nfc58b712e96a41e8bae29ab34f289d62">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/priority">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:comment>Describes the priority of a req:Requirement.</rdfs:comment>
-    <rdfs:label xml:lang="de">hat Priorität</rdfs:label>
-    <rdfs:label xml:lang="en">priority</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/status">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://ns.softwiki.de/req/2/Requirement"/>
-    <rdfs:comment>Defines the state of a req:Requirement.</rdfs:comment>
-    <rdfs:label xml:lang="de">hat Status</rdfs:label>
-    <rdfs:label xml:lang="en">status</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N5958e24c4f6b45fd8e8f972844a8724f">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory"/>
-    <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N741a10668a384e8c974835fa16e37fb8">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal17">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>saber en qué estado se encuentra</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-    <rdfs:subClassOf rdf:nodeID="Nafbb037bc3814cd2a9979df20af4b1f9"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal16">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>permitir que gestione trámites</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story11">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b13</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b13", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "carlos gimenez", "Created": 1591187280000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 0.0, "Con el fin de": "saber que mi tr\u00e1mite est\u00e1 siendo atendido", "Quiero": "recibir una notificaci\u00f3n por correo electr\u00f3nico o mensaje de texto cuando se cambie el estado de mi solicitud a \"en progreso\"", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 1, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal3">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>evitar asignar un trámite que no corresponde</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/Project">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:resource="http://usefulinc.com/ns/doap#Project"/>
-    <rdfs:comment>The class req:Project describes general projects. It is aligned to doap:Project that is intended to describe open-source projects.</rdfs:comment>
-    <rdfs:label xml:lang="en">Project</rdfs:label>
-    <rdfs:label xml:lang="de">Projekt</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementSource">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story10">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b12</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b12", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "maria lopez", "Reporter": "gaston ramirez", "Created": 1591187280000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 0.0, "Con el fin de": "visualizar el estado general de gesti\u00f3n de tr\u00e1mites", "Quiero": "obtener un gr\u00e1fico estad\u00edstico sobre el estado de tr\u00e1mites", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 5, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement9"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story5">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b7</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b7", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1593534540000, "Updated": 1593785580000, "Resolved": 1593785580000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 0.0, "Con el fin de": "declarar que se resolvi\u00f3 mi petici\u00f3n", "Quiero": "finalizar un tr\u00e1mite", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement5"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/dependsOn">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/entails"/>
-    <rdfs:label xml:lang="en">depends on</rdfs:label>
-    <rdfs:label xml:lang="de">hängt ab von</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isPositiveContributionToGoal">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
     <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer4">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-    <rdfs:label>juan perez</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story8">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b10</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b10", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "minor", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "pedro rodriguez", "Reporter": "lucrecia perez", "Created": 1591270500000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": null, "Con el fin de": "aportar informaci\u00f3n a un tr\u00e1mite creado", "Quiero": "cargar un archivo", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 3, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement7"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal4">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal10">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>evitar cualquier operación sobre él</rdfs:label>
+    <rdfs:label>visualizar el estado general de gestión de trámites</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal5">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>declarar que se resolvió mi petición</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#project0">
-    <rdf:type rdf:resource="http://ns.softwiki.de/req/2/Project"/>
-    <rdfs:label>portal pba</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="N379a02863dac43eba83388cd8a5ef737"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal9">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>evitar que se realice manualmente</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nad5bc2b2e8fc4cac8079d6270ee8c109">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RefinementReason">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isOptional">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#stakeholder3">
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#developer1">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-    <rdfs:label>operador del portal de trámites</rdfs:label>
+    <rdfs:label>maria lopez</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nafbb037bc3814cd2a9979df20af4b1f9">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
+    <rdfs:subClassOf rdf:nodeID="N751ed8c6728e4474960b62570161d49a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbb1f8a242a14441af6fc0505ccd3c73">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story16">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b18</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b18", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "lucrecia perez", "Created": 1590765360000, "Updated": 1591360980000, "Resolved": 1591360980000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "permitir que gestione tr\u00e1mites", "Quiero": "dar de alta una entidad", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement15"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7720899e46ca474e8ed884c11c5f02ba">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasGoal"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#stakeholder0">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
     <rdfs:label>usuario del portal de trámites</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N3371147b7419422db5d63fe29c7c7233">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story7">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b9</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b9", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "low", "Resolution": "fixed", "Assignee": "ana gomez", "Reporter": "gaston ramirez", "Created": 1592493000000, "Updated": 1593434760000, "Resolved": 1593434760000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": "b6", "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "permitir que algunos organismos operen sobre \u00e9l", "Quiero": "ocultar un tr\u00e1mite", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement4"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N586e4c5acdfa438eafbea9ffe8db3917">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
-    <rdf:rest rdf:nodeID="N845e380995704d9fa456c4437ac7ea7b"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N411825e151f745009daf15b44c451733">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isRefinementOf"/>
-    <rdf:rest rdf:nodeID="N76fb33931dae483895469b907faaab35"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasSource">
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Source"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N725802311f7149bb812e3b52b636d4b4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8215d80494cc4122827096a4ef469f54">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#stakeholder6">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-    <rdfs:label>operario del portal</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story1">
+  <rdf:Description rdf:nodeID="Nd76a8872922f41dd9375b891ff3f2324">
+    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>evitar cualquier operación sobre él</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story16">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b3</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b3", "Summary": null, "Issue Type": "story", "Status": "open", "Priority": "blocker", "Risk Probability": "low", "Resolution": "unresolved", "Assignee": "pedro rodriguez", "Reporter": "gaston ramirez", "Created": 1623061080000, "Updated": 1623061140000, "Resolved": null, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": "b2, b7", "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "ver los tr\u00e1mites que realic\u00e9", "Quiero": "listar mis tr\u00e1mites", "Como": "usuario del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement1"/>
+    <rdfs:label>b18</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b18", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "lucrecia perez", "Created": 1590765360000, "Updated": 1591360980000, "Resolved": 1591360980000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "permitir que gestione tr\u00e1mites", "Quiero": "dar de alta una entidad", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>aportar información a un trámite creado</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <rdfs:label>b12</rdfs:label>
+    <terms:description>{"Project": "portal pba", "Key": "b12", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "major", "Risk Probability": "medium", "Resolution": "fixed", "Assignee": "maria lopez", "Reporter": "gaston ramirez", "Created": 1591187280000, "Updated": 1593434700000, "Resolved": 1593434700000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": null, "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 0.0, "Con el fin de": "visualizar el estado general de gesti\u00f3n de tr\u00e1mites", "Quiero": "obtener un gr\u00e1fico estad\u00edstico sobre el estado de tr\u00e1mites", "Como": null, "Epic/Theme": null, "Rank": null, "Story Points": 5, "Reglas": null, "Business Value": null, "Flagged": null}</terms:description>
+    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isNegativeContributionToGoal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/lastContributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/contributor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
+    <rdfs:comment>Indicates the req:Stakeholder that made the latest contribution on a req:Requirements.</rdfs:comment>
+    <rdfs:label xml:lang="en">Last Contributor</rdfs:label>
+    <rdfs:label xml:lang="de">hat zuletzt beigetragen</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal1">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>ver los trámites que realicé</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementSource">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isCoexistentWith">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Nbc13725e24284968abeb4be1eead2c62">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#describesRequirement"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.softwiki.de/req/2/details">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
-    <rdfs:subPropertyOf rdf:resource="http://ns.softwiki.de/req/2/relation"/>
-    <owl:inverseOf rdf:resource="http://ns.softwiki.de/req/2/isDetailedBy"/>
-    <rdfs:label xml:lang="de">detailliert</rdfs:label>
-    <rdfs:label xml:lang="en">details</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N76fb33931dae483895469b907faaab35">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithUseCase"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal7">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>permitir que algunos organismos operen sobre él</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal13">
     <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
     <rdfs:label>controlar los trámites que se aprueban</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N845e380995704d9fa456c4437ac7ea7b">
-    <rdf:first rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:about="http://rdfs.org/sioc/ns#Item">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#story2">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-    <rdfs:label>b4</rdfs:label>
-    <dcterms:description>{"Project": "portal pba", "Key": "b4", "Summary": null, "Issue Type": "story", "Status": "closed", "Priority": "blocker", "Risk Probability": "high", "Resolution": "fixed", "Assignee": "juan perez", "Reporter": "lucrecia perez", "Created": 1622815920000, "Updated": 1622815920000, "Resolved": 1623061380000, "Affects Version/s": null, "Fix Version/s": null, "Due Date": null, "Votes": null, "Images": null, "Original Estimate": null, "Remaining Estimate": null, "Time Spent": null, "Work Ratio": null, "Sub-Tasks": null, "Related": null, "Duplicates": "b8", "Conflicting": null, "Blocking": null, "Environment": null, "Description": null, "Security Level": null, "Progress": null, "\u03a3 Progress": null, "\u03a3 Time Spent": null, "\u03a3 Remaining Estimate": null, "\u03a3 Original Estimate": null, "Labels": null, "Criterios de aceptaci\u00f3n": null, "Obligatorio": 1.0, "Con el fin de": "que pueda ser asignado a la entidad correspondiente", "Quiero": "aprobar un tr\u00e1mite", "Como": "operador del portal de tr\u00e1mites", "Epic/Theme": null, "Rank": null, "Story Points": 2, "Reglas": null, "Business Value": null, "Flagged": null}</dcterms:description>
-    <ontoreq:describesRequirement rdf:resource="http://www.semanticweb.org/prueba_merge#requirement2"/>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal17">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>saber en qué estado se encuentra</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>permitir que algunos organismos operen sobre él</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal12">
+    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
+    <rdfs:label>que se resuelva con prioridad</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isInConflictWith">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasRefinementTarget">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Refinement"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N8d5656021f47485cb7ed89419f1c3fa5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#operationalisesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAlternativeTo"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/depiction">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal10">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>visualizar el estado general de gestión de trámites</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-    <rdfs:subClassOf rdf:nodeID="Neeec6a80d3804fb282d8240dab213a3d"/>
-    <rdfs:subClassOf rdf:nodeID="N8d5656021f47485cb7ed89419f1c3fa5"/>
-    <rdfs:subClassOf rdf:nodeID="Ncf384b804c944bcab903bbec827e3d40"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#excludes">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge#goal15">
-    <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-    <rdfs:label>saber cómo completar mi solicitud y los datos que debo proporcionar</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isAuthoredBy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Stakeholder"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N6d80ed2089274e1b87771c00edc14de7">
+  <rdf:Description rdf:nodeID="Nf1981c4e7c0745bca8c76fced3e1f74d">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#refinesTo"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Goal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasScenario">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Requirement"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N98c1aacaaeae45788172ae3e10adfb36">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isConnectedWithTestCase"/>
-    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#TestCase">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#RequirementsArtefact"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#UseCase">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
+    <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#hasObstacle"/>
+    <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Obstacle"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.semanticweb.org/prueba_merge">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -1003,19 +1016,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://usefulinc.com/ns/doap#Project">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isExcludedBy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Scenario">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#Story"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
