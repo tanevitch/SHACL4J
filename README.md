@@ -15,7 +15,7 @@ git clone https://github.com/tanevitch/SHACL4J.git
 python -m venv .env
 .env\Script\activate
 pip install -r requirements.txt
-python run
+python main.py
 ```
 
 ## Contribución

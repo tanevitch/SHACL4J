@@ -36,7 +36,7 @@ def load_requirement(requirement: object, clave: str):
     G.add((individual, URIRef(SWORE["priority"]), Literal(requirement["Priority"])))
     G.add((individual, URIRef(SWORE["status"]), Literal(requirement["Status"])))
     G.add((individual, URIRef(EX["risk"]), Literal(requirement["Risk Probability"])))
-    G.add((individual, URIRef(EX["cost"]), Literal(requirement["Story Points"])))
+    G.add((individual, URIRef(EX["cost"]), Literal(requirement["Cost"])))
     if (requirement["Obligatorio"]):
         G.add((individual, URIRef(ONTOREQ["isMandatory"]), Literal(requirement["Obligatorio"], datatype=XSD.boolean)))
 

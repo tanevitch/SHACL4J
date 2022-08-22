@@ -38,20 +38,14 @@ def validate_graph():
             sh:message "Para cada requerimiento, se debe definir si es obligatorio o no"@es ;
         ] ;
         sh:sparql [
-            a sh:SPARQLConstraint ;
-            sh:message "si un requerimiento está bloqueado por otro ese requerimiento no puede estar cerrado si su bloqueante no lo está";
-            sh:select 
-            """ select $this
-                where {
-                        $this a <http://ns.softwiki.de/req/2/Requirement> . 
-                        $this <http://ns.softwiki.de/req/2/status> ?literal1 .
-                        filter(?literal1 in ('closed','cerrado', 'resuelto')) .
-                        $this <http://ns.softwiki.de/req/2/requires> ?otroReq .
-                        ?otroReq a <http://ns.softwiki.de/req/2/Requirement> .
-                        ?otroReq <http://ns.softwiki.de/req/2/status> ?literal .
-                        filter(?literal in ('abierto','in progress', 'open')) .
-                }
-            """;
+        a sh:SPARQLConstraint ;
+            sh:message "No debe haber requerimientos opcionales con un riesgo o costo alto"@es;
+            sh:select """ 
+                select $this where {
+                $this a <http://ns.softwiki.de/req/2/Requirement> .
+                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
+                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
+                }""";
         ].
     '''))
 
@@ -108,3 +102,4 @@ def validate_graph():
         f.write(results_text2[2])
         f.write("-------------")
 
+validate_graph()
