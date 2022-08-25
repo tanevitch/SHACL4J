@@ -1,77 +1,30 @@
-from rdflib import Graph
-from io import StringIO 
+from rdflib import Graph, URIRef, RDFS
 from pyshacl import validate
+import re
+
+def build_report(txt, data_graph):
+        report= "---------------------------\nREPORTE DE ERRORES\n---------------------------\n"
+        reporte_errores= txt.split("Constraint Violation")
+        del reporte_errores[0]
+        for error in reporte_errores:
+            requirement= re.search("requirement\\w+", error)
+            label= data_graph.value(URIRef("http://www.semanticweb.org/prueba_merge#"+requirement.group(0)), RDFS.label)
+            message= re.search('Message: .+', error).group(0) if re.search('Message: .+', error) else ""
+            report_text= f"Error en requerimiento '{label}'. {message}"
+
+            report += report_text + '\n'
+        
+        return report+"---------------------------\nFIN REPORTE\n---------------------------"
 
 def validate_graph():
     data_graph = Graph()
-    data_graph.parse("ontology/output.xml")
+    data_graph.parse("ontology/data_graph.xml")
 
-    shape_sobre_requirement = Graph()
-    shape_sobre_requirement.parse(StringIO('''
-    @prefix dash: <http://datashapes.org/dash#> .
-    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-    @prefix sh: <http://www.w3.org/ns/shacl#> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-    @prefix ex: <http://example.org/ns#> .
-    @prefix swore: <http://ns.softwiki.de/req/2/> .
-    @prefix ro: <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#> .
+    shape_graph = Graph()
+    shape_graph.parse("ontology/shape_graph.ttl")
 
-    ex:RequirementShape
-        a sh:NodeShape ;
-        sh:targetClass swore:Requirement ;
-        sh:property [
-            sh:path ro:hasGoal;
-            sh:minCount 1 ;
-            sh:message "Cada requerimiento debe estar asociado a al menos una meta"@es ;
-        ] ;
-        sh:property [
-            sh:path ro:isInConflictWith;
-            sh:maxCount 0 ;
-            sh:message "No debe haber requerimientos conflictivos"@es ;
-        ] ;
-        sh:property [
-            sh:path ro:isMandatory;
-            sh:minCount 1 ;
-            sh:maxCount 1 ;
-            sh:datatype xsd:boolean ;
-            sh:message "Para cada requerimiento, se debe definir si es obligatorio o no"@es ;
-        ] ;
-        sh:sparql [
-        a sh:SPARQLConstraint ;
-            sh:message "No debe haber requerimientos opcionales con un riesgo o costo alto"@es;
-            sh:select """ 
-                select $this where {
-                $this a <http://ns.softwiki.de/req/2/Requirement> .
-                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
-                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
-                }""";
-        ].
-    '''))
-
-    shape_sobre_meta = Graph()
-    shape_sobre_meta.parse(StringIO('''
-    @prefix dash: <http://datashapes.org/dash#> .
-    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-    @prefix sh: <http://www.w3.org/ns/shacl#> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-    @prefix ex: <http://example.org/ns#> .
-    @prefix ro: <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#> .
-
-
-    ex:GoalCountShape
-        a sh:NodeShape ;
-        sh:targetNode ro:Goal ;
-        sh:property [
-            sh:path [ sh:inversePath rdf:type ] ;
-            sh:minCount 1 ;
-            sh:message "Al menos una meta debe ser especificada"@es ;
-        ] .
-    '''))
-
-    validaciones_goal= validate(data_graph,
-        shacl_graph=shape_sobre_meta,
+    result= validate(data_graph,
+        shacl_graph=shape_graph,
         ont_graph=None,
         inference='none',
         abort_on_first=False,
@@ -82,24 +35,7 @@ def validate_graph():
         js=False,
         debug=False)
 
-    validacion_requirement= validate(data_graph,
-        shacl_graph=shape_sobre_requirement,
-        ont_graph=None,
-        inference='none',
-        abort_on_first=False,
-        allow_infos=False,
-        allow_warnings=False,
-        meta_shacl=False,
-        advanced=False,
-        js=False,
-        debug=False)
-
-    results_text1 = validacion_requirement
-    results_text2 = validaciones_goal
-
-    with open('reporte.txt', 'w') as f:
-        f.write(results_text1[2])
-        f.write(results_text2[2])
-        f.write("-------------")
+    with open('reporte.txt', 'w', encoding="utf-8") as f:
+        f.write(build_report(result[2], data_graph))
 
 validate_graph()

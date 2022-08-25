@@ -37,8 +37,8 @@ def load_requirement(requirement: object, clave: str):
     G.add((individual, URIRef(SWORE["status"]), Literal(requirement["Status"])))
     G.add((individual, URIRef(EX["risk"]), Literal(requirement["Risk Probability"])))
     G.add((individual, URIRef(EX["cost"]), Literal(requirement["Cost"])))
-    if (requirement["Obligatorio"]):
-        G.add((individual, URIRef(ONTOREQ["isMandatory"]), Literal(requirement["Obligatorio"], datatype=XSD.boolean)))
+    if (requirement["Obligatorio"] != None):
+        G.add((individual, URIRef(ONTOREQ["isMandatory"]), Literal(requirement["Obligatorio"] == True, datatype=XSD.boolean)))
 
     return individual
 
@@ -187,5 +187,5 @@ def populate_graph():
     link_duplicated_requirements()
     link_conflicting_requirements()
     link_blocking_requirements()
-    G.serialize("ontology/output.xml", format="xml", encoding="utf-8")
+    G.serialize("ontology/data_graph.xml", format="xml", encoding="utf-8")
 

@@ -1,108 +1,12 @@
-Validation Report
-Conforms: False
-Results (12):
-Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:maxCount Literal("0", datatype=xsd:integer) ; sh:message Literal("No debe haber requerimientos conflictivos", lang=es) ; sh:path ro:isInConflictWith ]
-	Focus Node: ex:requirement4
-	Result Path: ro:isInConflictWith
-	Message: No debe haber requerimientos conflictivos
-Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:maxCount Literal("0", datatype=xsd:integer) ; sh:message Literal("No debe haber requerimientos conflictivos", lang=es) ; sh:path ro:isInConflictWith ]
-	Focus Node: ex:requirement0
-	Result Path: ro:isInConflictWith
-	Message: No debe haber requerimientos conflictivos
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement5
-	Result Path: ro:isMandatory
-	Message: Para cada requerimiento, se debe definir si es obligatorio o no
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement10
-	Result Path: ro:isMandatory
-	Message: Para cada requerimiento, se debe definir si es obligatorio o no
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement7
-	Result Path: ro:isMandatory
-	Message: Para cada requerimiento, se debe definir si es obligatorio o no
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement9
-	Result Path: ro:isMandatory
-	Message: Para cada requerimiento, se debe definir si es obligatorio o no
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:datatype xsd:boolean ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Para cada requerimiento, se debe definir si es obligatorio o no", lang=es) ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path ro:isMandatory ]
-	Focus Node: ex:requirement14
-	Result Path: ro:isMandatory
-	Message: Para cada requerimiento, se debe definir si es obligatorio o no
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: ex:RequirementShape
-	Focus Node: ex:requirement4
-	Value Node: ex:requirement4
-	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("No debe haber requerimientos opcionales con un riesgo o costo alto", lang=es) ; sh:select Literal(" 
-                select $this where {
-                $this a <http://ns.softwiki.de/req/2/Requirement> .
-                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
-                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
-                }") ]
-	Message: No debe haber requerimientos opcionales con un riesgo o costo alto
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: ex:RequirementShape
-	Focus Node: ex:requirement2
-	Value Node: ex:requirement2
-	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("No debe haber requerimientos opcionales con un riesgo o costo alto", lang=es) ; sh:select Literal(" 
-                select $this where {
-                $this a <http://ns.softwiki.de/req/2/Requirement> .
-                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
-                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
-                }") ]
-	Message: No debe haber requerimientos opcionales con un riesgo o costo alto
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: ex:RequirementShape
-	Focus Node: ex:requirement12
-	Value Node: ex:requirement12
-	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("No debe haber requerimientos opcionales con un riesgo o costo alto", lang=es) ; sh:select Literal(" 
-                select $this where {
-                $this a <http://ns.softwiki.de/req/2/Requirement> .
-                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
-                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
-                }") ]
-	Message: No debe haber requerimientos opcionales con un riesgo o costo alto
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: ex:RequirementShape
-	Focus Node: ex:requirement13
-	Value Node: ex:requirement13
-	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("No debe haber requerimientos opcionales con un riesgo o costo alto", lang=es) ; sh:select Literal(" 
-                select $this where {
-                $this a <http://ns.softwiki.de/req/2/Requirement> .
-                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
-                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
-                }") ]
-	Message: No debe haber requerimientos opcionales con un riesgo o costo alto
-Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: ex:RequirementShape
-	Focus Node: ex:requirement8
-	Value Node: ex:requirement8
-	Source Constraint: [ rdf:type sh:SPARQLConstraint ; sh:message Literal("No debe haber requerimientos opcionales con un riesgo o costo alto", lang=es) ; sh:select Literal(" 
-                select $this where {
-                $this a <http://ns.softwiki.de/req/2/Requirement> .
-                $this <http://www.semanticweb.org/ontologies/2012/4/test_ontology.owl#isMandatory> false .
-                { $this <http://www.semanticweb.org/prueba_merge#cost> "high" } UNION { $this <http://www.semanticweb.org/prueba_merge#risk> "high" } 
-                }") ]
-	Message: No debe haber requerimientos opcionales con un riesgo o costo alto
-Validation Report
-Conforms: True
--------------
+---------------------------
+REPORTE DE ERRORES
+---------------------------
+Error en requerimiento 'crear un trámite'. Message: No debe haber requerimientos conflictivos
+Error en requerimiento 'ocultar un trámite'. Message: No debe haber requerimientos conflictivos
+Error en requerimiento 'cargar un archivo'. Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Error en requerimiento 'poder consultar una sección de ayuda a la hora de cargar un trámite'. Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Error en requerimiento 'finalizar un trámite'. Message: No debe haber requerimientos opcionales con un riesgo o costo alto
+Error en requerimiento 'obtener un gráfico estadístico sobre el estado de trámites'. Message: No debe haber requerimientos opcionales con un riesgo o costo alto
+---------------------------
+FIN REPORTE
+---------------------------
