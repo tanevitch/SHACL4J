@@ -14,7 +14,7 @@ SHACL4J es una herramienta que tiene como objetivo servir de soporte para valida
 git clone https://github.com/tanevitch/SHACL4J.git
 cd SHACL4J
 python -m venv .env
-.env\Script\activate
+.env\Scripts\activate
 pip install -r requirements.txt
 python main.py
 ```
