@@ -19,16 +19,18 @@ def count_individuals_of(uri):
     return len(list(G.triples((None, RDF.type, uri))))
 
 def load_individual(uri: URIRef, class_type: str, literal: str) -> URIRef:
-    for s, p, o in G.triples((None, RDFS.label, Literal(literal))):
-        return s
-    individual= EX[class_type+str(count_individuals_of(uri))]
-    G.add((individual, RDF.type, uri))
-    G.add((individual, RDFS.label, Literal(literal)))
-    return individual
+    if (literal):
+        for s, p, o in G.triples((None, RDFS.label, Literal(literal))):
+            return s
+        individual= EX[class_type+str(count_individuals_of(uri))]
+        G.add((individual, RDF.type, uri))
+        G.add((individual, RDFS.label, Literal(literal)))
+        return individual
 
 
 def load_property(uriFrom, prop, uriTo):
-    G.add((uriFrom, prop, uriTo))
+    if (uriTo):
+        G.add((uriFrom, prop, uriTo))
 
 def load_requirement(requirement: object, clave: str):
     uriRequirement= URIRef(SWORE["Requirement"])

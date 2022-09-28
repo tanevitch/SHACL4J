@@ -1,10 +1,12 @@
 ---------------------------
 REPORTE DE ERRORES
 ---------------------------
-Error en requerimiento 'crear un trámite'. Message: No debe haber requerimientos conflictivos
+Error en requerimiento 'dar de alta una entidad'. Message: Cada requerimiento debe estar asociado a al menos una meta
 Error en requerimiento 'ocultar un trámite'. Message: No debe haber requerimientos conflictivos
-Error en requerimiento 'cargar un archivo'. Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Error en requerimiento 'crear un trámite'. Message: No debe haber requerimientos conflictivos
+Error en requerimiento 'dar de alta una entidad'. Message: Para cada requerimiento, se debe definir si es obligatorio o no
 Error en requerimiento 'poder consultar una sección de ayuda a la hora de cargar un trámite'. Message: Para cada requerimiento, se debe definir si es obligatorio o no
+Error en requerimiento 'cargar un archivo'. Message: Para cada requerimiento, se debe definir si es obligatorio o no
 Error en requerimiento 'finalizar un trámite'. Message: No debe haber requerimientos opcionales con un riesgo o costo alto
 Error en requerimiento 'obtener un gráfico estadístico sobre el estado de trámites'. Message: No debe haber requerimientos opcionales con un riesgo o costo alto
 ---------------------------
